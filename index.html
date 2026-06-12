@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Fighter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="explosion-container"></div>
+        
+        <!-- UI Overlays -->
+        <div id="ui-layer">
+            <div id="hud" class="hidden">
+                <div class="score">Score: <span id="score-val">0</span></div>
+                <div class="lives">Lives: <span id="lives-val">3</span></div>
+            </div>
+            
+            <div id="start-screen" class="screen active">
+                <h1>GALAXY FIGHTER</h1>
+                <button id="start-btn">Start Game</button>
+            </div>
+            
+            <div id="game-over-screen" class="screen hidden">
+                <h1>GAME OVER</h1>
+                <div class="final-score">Final Score: <span id="final-score-val">0</span></div>
+                <button id="restart-btn">Restart Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
